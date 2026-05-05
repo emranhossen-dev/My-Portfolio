@@ -32,64 +32,37 @@ const eChips = [
 
 const projs = [
   {
-    id:"ec", ti:"E-Commerce Platform",
-    desc:"Full-featured store with cart, Stripe payments & admin dashboard.",
-    lng:"Comprehensive e-commerce with product catalog, filters, cart management, Stripe payments, and order tracking.",
-    pr:"Small businesses needed affordable scalable storefronts without expensive SaaS fees.",
-    so:"Built a custom Next.js platform with SSR, Stripe payments, Prisma ORM, and admin CMS.",
-    tc:["Next.js","TypeScript","Tailwind","Stripe","Prisma","PostgreSQL"],
-    fe:["Product catalog with filtering","Persistent cart & wishlist","Stripe secure checkout","Order tracking dashboard","Admin CMS panel","Mobile-first responsive"],
-    li:"#",gh:"#",co:"#7c6fff",em:"🛍️",ca:"Full Stack",
+    id:"ec", ti:"Iron Locker - Cloud Storage Vault",
+    desc:"Cloud storage locker for secure uploads of images, certificates, documents, and links.",
+    lng:"Secure cloud storage vault where users can freely upload and organize their images, certificates, documents, and important links with easy access and management.",
+    pr:"Users needed a secure, simple personal cloud vault to store and organize their important files, certificates, and links in one place.",
+    so:"Built a full-stack application with Next.js, TypeScript, secure file upload system, and organized cloud storage management.",
+    tc:["Next.js","TypeScript","Tailwind","Node.js","MongoDB","File Upload"],
+    fe:["Secure file upload","Image gallery","Certificate storage","Link management","Organized vault system","Download & share options"],
+    img:"https://i.ibb.co.com/BVhZqtj9/Whats-App-Image-2026-05-06-at-3-12-49-AM.jpg",
+    li:"https://ironlocker.vercel.app",gh:"https://github.com/emranhossen-dev/Iron-Locker",co:"#7c6fff",ca:"Full Stack",
   },
   {
-    id:"tm", ti:"Task Manager App",
-    desc:"Real-time Kanban board with drag-and-drop and team collaboration.",
-    lng:"Productivity app with real-time updates, drag-and-drop Kanban boards, and team workspaces.",
-    pr:"Teams needed a fast lightweight alternative to bloated project management tools.",
-    so:"Built with React, Firebase real-time DB, and smooth DnD interactions.",
-    tc:["React","Firebase","TypeScript","Tailwind"],
-    fe:["Drag-and-drop Kanban","Real-time sync","Team workspaces","Due dates & priority","Activity feed","Offline support"],
-    li:"#",gh:"#",co:"#34d399",em:"📋",ca:"Frontend",
+    id:"tm", ti:"Luminous Skill Center LMS",
+    desc:"Learning management system for skill development and online courses.",
+    lng:"Comprehensive LMS platform with course management, student progress tracking, and interactive learning modules.",
+    pr:"Educational institutions needed an affordable platform for online learning and skill development.",
+    so:"Built with modern web stack featuring course management, real-time progress tracking, and interactive modules.",
+    tc:["React","TypeScript","Tailwind","Node.js","MongoDB"],
+    fe:["Course management dashboard","Student progress tracking","Interactive learning modules","Quiz & assessments","Real-time notifications","Mobile responsive"],
+    img:"https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+    li:"https://luminous-centre.vercel.app",gh:"https://github.com/emranhossen-dev/Luminous-Centre",co:"#34d399",ca:"Full Stack",
   },
   {
-    id:"bl", ti:"Developer Blog Platform",
-    desc:"MDX-powered blog with CMS, syntax highlighting, and full-text search.",
-    lng:"Developer-focused blog with MDX support, syntax highlighted code blocks, and headless CMS.",
-    pr:"Developers wanted a fast, beautiful blog without WordPress overhead.",
-    so:"Built with Next.js static generation, MDX, Contentlayer, and Algolia search.",
-    tc:["Next.js","MDX","Contentlayer","Algolia","Tailwind"],
-    fe:["MDX custom components","Syntax highlighting","Table of contents","Algolia full-text search","RSS feed","Reading time"],
-    li:"#",gh:"#",co:"#f59e0b",em:"✍️",ca:"Full Stack",
-  },
-  {
-    id:"ap", ti:"REST API Backend",
-    desc:"Scalable Node.js REST API with auth, rate limiting, and OpenAPI docs.",
-    lng:"Production-ready Node.js REST API with JWT auth, role-based access, caching, and Swagger docs.",
-    pr:"Mobile app needed a robust, well-documented backend with security best practices.",
-    so:"Built with Express, PostgreSQL, Redis caching, JWT auth, and automated OpenAPI docs.",
-    tc:["Node.js","Express","PostgreSQL","Redis","JWT","Swagger"],
-    fe:["JWT authentication","Role-based access control","Rate limiting","Redis caching","Swagger docs","Input validation"],
-    li:"#",gh:"#",co:"#ef4444",em:"🔌",ca:"Backend",
-  },
-  {
-    id:"wt", ti:"Weather Dashboard",
-    desc:"Real-time weather with location detection, charts, and 7-day forecasts.",
-    lng:"Beautiful weather dashboard using OpenWeatherMap API with Chart.js visualizations.",
-    pr:"Existing weather apps were cluttered with ads and poor data visualization.",
-    so:"Built a clean data-rich app with Chart.js charts and smooth CSS animations.",
-    tc:["React","TypeScript","Chart.js","OpenWeatherMap"],
-    fe:["GPS auto-detection","7-day forecast","Hourly temperature chart","Animated weather icons","City search","UV index & wind data"],
-    li:"#",gh:"#",co:"#38bdf8",em:"🌤️",ca:"Frontend",
-  },
-  {
-    id:"pf", ti:"This Portfolio",
-    desc:"Built with HTML, Tailwind CSS & JS — you're looking at it!",
-    lng:"Modern developer portfolio showcasing projects and skills with smooth animations and clean design.",
-    pr:"Needed a portfolio that looks professional, loads fast, and shows off skills impressively.",
-    so:"Designed with editorial aesthetics, attention to typography, spacing, and motion.",
-    tc:["HTML5","CSS3","Tailwind CSS","JavaScript"],
-    fe:["Dark / light mode","Scroll reveal animations","⌘K command palette","Project detail modals","Contact form validation","Fully responsive"],
-    li:"#",gh:"#",co:"#a78bfa",em:"🎯",ca:"Frontend",
+    id:"bl", ti:"Memory Game - Swap Puzzle",
+    desc:"Interactive puzzle game based on event bubbling concept with memory challenges.",
+    lng:"Engaging swap puzzle game that tests memory and pattern recognition with smooth animations and interactive gameplay.",
+    pr:"Players wanted an entertaining puzzle game that challenges memory with engaging visuals and smooth interactions.",
+    so:"Built with vanilla JavaScript using event delegation and bubbling for efficient DOM handling and game logic.",
+    tc:["JavaScript","HTML5","CSS3","Event Handling"],
+    fe:["Memory card matching","Swap puzzle mechanics","Score tracking","Difficulty levels","Timer challenges","Sound effects"],
+    img:"https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop",
+    li:"https://memorypro.vercel.app",gh:"https://github.com/emranhossen-dev/memory-game",co:"#f59e0b",ca:"Frontend",
   },
 ];
 
@@ -252,8 +225,8 @@ window.addEventListener("scroll", () => {
     g.innerHTML += `
       <div class="pc rv" style="transition-delay:${(i % 3) * .1}s" onclick="openModal('${p.id}')">
         <div class="pc-bar" style="background:${p.co}"></div>
-        <div class="pc-vis" style="background:radial-gradient(circle at 50% 60%,${p.co}18,transparent 70%)">
-          <span style="filter:drop-shadow(0 4px 12px ${p.co}50)">${p.em}</span>
+        <div class="pc-vis" style="background-image:url('${p.img}');background-size:cover;background-position:center">
+          <div class="pc-overlay"></div>
           <span class="pc-cat">${p.ca}</span>
         </div>
         <div class="pc-body">

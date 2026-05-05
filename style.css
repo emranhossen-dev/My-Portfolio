@@ -542,15 +542,22 @@ section { padding: 108px 5%; position: relative; }
 .pc-bar { height: 3px; width: 100%; }
 .pc-vis {
   padding: 28px; display: flex; align-items: center; justify-content: center;
-  font-size: 52px; position: relative; min-height: 130px;
+  font-size: 52px; position: relative; min-height: 180px;
+  background-size: cover; background-position: center;
+}
+.pc-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.3), rgba(0,0,0,.5));
+  border-radius: 20px 20px 0 0;
 }
 .pc-cat {
-  position: absolute; top: 12px; right: 12px;
-  padding: 4px 10px; border-radius: 6px;
+  position: absolute; top: 12px; right: 12px; z-index: 10;
+  padding: 6px 12px; border-radius: 6px;
   font-size: 11px; font-weight: 600;
   font-family: 'JetBrains Mono', monospace;
-  background: var(--bg4); color: var(--text3);
-  border: 1px solid var(--border2);
+  background: rgba(0,0,0,.6); color: #fff;
+  border: 1px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(8px);
 }
 .pc-body { padding: 18px; padding-top: 0; flex: 1; display: flex; flex-direction: column; gap: 10px; }
 .pc-title {
